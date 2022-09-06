@@ -55,39 +55,8 @@ h6 {
 .container {
     max-width: var(--max-width);
     margin: auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
     overflow: hidden;
-}
-
-.category {
-    display: inline-block;
-    color: #fff;
-    font-size: 0.55rem;
-    text-transform: uppercase;
-    padding: 0.4rem 0.6rem;
-    border-radius: 15px;
-    margin-bottom: 0.5rem;
-}
-
-.category-tech {
-    background: var(--tech-color)
-}
-
-.card {
-    background: #fff;
-    padding: 1rem;
-}
-
-/* Inner page grid container */
-.page-container {
-    display: grid;
-    grid-template-columns: 5fr 2fr;
-    margin: 2rem 0;
-    grid-gap: 1.5rem;
-}
-
-.page-container>*:first-child {
-    grid-row: 1 / span 3;
 }
 
 /* Navigation */
@@ -198,33 +167,67 @@ h6 {
 }
 
 /* Menu */
+#menu {
+    /* background-color: var(--primary-color); */
+    /* height: auto; */
+    background-color: var(--light-color);
+}
+
+#menu .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 #menu .articlesContainer {
+    margin: 0 auto;
+    max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
 }
 
-#menu .articlesContainer>*:first-child,
-#menu .articlesContainer>*:last-child {
-    display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-gap: 1rem;
-    align-items: center;
-    /* grid-column: 1 / span 2; */
+#menu .card {
+    box-shadow: 0 0 3px 3px rgba(250, 153, 36, 0.7);
+    /* background-color: #f3f3f3; */
+    /* background-color: rgb(250, 153, 36); */
+    padding: 0.5rem;
 }
 
-/* #menu .articlesContainer>*:last-child {
-    grid-column: 2 / span 2;
-} */
+#menu .cardContent {
+    text-align: center;
+    line-height: 1.5;
 
-/* #article .meta {
+
+}
+
+#menu img {
+    width: 100%;
+    display: block;
+}
+
+#menu p {
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+
+}
+
+#menu .cardFooter {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background: #eee;
-    padding: 0.5rem;
+    /* background-color: #050505; */
+    vertical-align: bottom;
+}
+
+/* #menu .cardFooter div {
+    vertical-align: bottom;
 } */
-/* 
-#article .meta .category {
-    margin-top: 0.4rem;
-} */
+
+/* Contacts */
+#contacts .contactsContainer {
+    margin: 0 auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
